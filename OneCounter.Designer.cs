@@ -31,7 +31,10 @@ namespace OneCounter
         {
             this.enterButton = new System.Windows.Forms.Button();
             this.tittleLabel = new System.Windows.Forms.Label();
-            this.inputTextBox = new System.Windows.Forms.TextBox();
+            this.inputToTextBox = new System.Windows.Forms.TextBox();
+            this.inputFromTextBox = new System.Windows.Forms.TextBox();
+            this.fromLabel = new System.Windows.Forms.Label();
+            this.toLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // enterButton
@@ -50,25 +53,57 @@ namespace OneCounter
             this.tittleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tittleLabel.Location = new System.Drawing.Point(76, 45);
             this.tittleLabel.Name = "tittleLabel";
-            this.tittleLabel.Size = new System.Drawing.Size(182, 31);
+            this.tittleLabel.Size = new System.Drawing.Size(196, 31);
             this.tittleLabel.TabIndex = 1;
-            this.tittleLabel.Text = "Enter Number";
+            this.tittleLabel.Text = "Enter Numbers";
             // 
-            // inputTextBox
+            // inputToTextBox
             // 
-            this.inputTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTextBox.Location = new System.Drawing.Point(91, 107);
-            this.inputTextBox.Name = "inputTextBox";
-            this.inputTextBox.Size = new System.Drawing.Size(153, 30);
-            this.inputTextBox.TabIndex = 2;
-            this.inputTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inputToTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputToTextBox.Location = new System.Drawing.Point(186, 107);
+            this.inputToTextBox.Name = "inputToTextBox";
+            this.inputToTextBox.Size = new System.Drawing.Size(95, 30);
+            this.inputToTextBox.TabIndex = 2;
+            this.inputToTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // inputFromTextBox
+            // 
+            this.inputFromTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputFromTextBox.Location = new System.Drawing.Point(63, 107);
+            this.inputFromTextBox.Name = "inputFromTextBox";
+            this.inputFromTextBox.Size = new System.Drawing.Size(86, 30);
+            this.inputFromTextBox.TabIndex = 3;
+            this.inputFromTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fromLabel
+            // 
+            this.fromLabel.AutoSize = true;
+            this.fromLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fromLabel.Location = new System.Drawing.Point(91, 140);
+            this.fromLabel.Name = "fromLabel";
+            this.fromLabel.Size = new System.Drawing.Size(36, 17);
+            this.fromLabel.TabIndex = 4;
+            this.fromLabel.Text = "from";
+            // 
+            // toLabel
+            // 
+            this.toLabel.AutoSize = true;
+            this.toLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toLabel.Location = new System.Drawing.Point(218, 140);
+            this.toLabel.Name = "toLabel";
+            this.toLabel.Size = new System.Drawing.Size(20, 17);
+            this.toLabel.TabIndex = 5;
+            this.toLabel.Text = "to";
             // 
             // OneCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 281);
-            this.Controls.Add(this.inputTextBox);
+            this.Controls.Add(this.toLabel);
+            this.Controls.Add(this.fromLabel);
+            this.Controls.Add(this.inputFromTextBox);
+            this.Controls.Add(this.inputToTextBox);
             this.Controls.Add(this.tittleLabel);
             this.Controls.Add(this.enterButton);
             this.Name = "OneCounter";
@@ -83,7 +118,10 @@ namespace OneCounter
 
         private System.Windows.Forms.Button enterButton;
         private System.Windows.Forms.Label tittleLabel;
-        private System.Windows.Forms.TextBox inputTextBox;
+        private System.Windows.Forms.TextBox inputToTextBox;
+        private System.Windows.Forms.TextBox inputFromTextBox;
+        private System.Windows.Forms.Label fromLabel;
+        private System.Windows.Forms.Label toLabel;
     }
 }
 
